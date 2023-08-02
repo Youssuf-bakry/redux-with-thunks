@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Used Technologies
+
+1. https://www.frankfurter.app/docs/ **for converting currencies**
+2. Redux Thunks
+3. Redux toolkit
+
 ## Available Scripts
 
 In the project directory, you can run:

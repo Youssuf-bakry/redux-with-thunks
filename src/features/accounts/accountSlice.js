@@ -16,6 +16,7 @@ const accountSlice = createSlice({
       state.isLoading = false;
     },
     withdraw(state, action) {
+      if (state.balance < action.payload) return;
       state.balance -= action.payload;
     },
     requestLoan: {
@@ -41,6 +42,7 @@ const accountSlice = createSlice({
     //   state.balance += action.payload;
     // },
     payLoan(state) {
+      if (state.balance < state.loan) return;
       state.balance -= state.loan;
       state.loan = 0;
       state.loanPurpose = "";
